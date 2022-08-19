@@ -1,0 +1,111 @@
+.firstscreen {
+    position: relative;
+    padding-top: 206px;
+    padding-bottom: 49px;
+    background-color: #090B32;
+    @media (max-width: 575px) {
+        padding-top: 110px;
+
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/firstscreen/mask.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
+}
+
+.container {}
+
+.firstscreen-wrapper {
+    position: relative;
+    z-index: 10;
+
+}
+
+.firstscreen-about {
+    margin-bottom: 97px;
+    max-width: 68%;
+    @media (max-width: 575px) {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+}
+
+.firstscreen-subtitle {
+    font-family: "Pragmatica-Book";
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: #7E779A;
+    margin-bottom: 16px;
+    @media (max-width: 575px) {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+}
+
+.firstscreen-title {
+    font-family: "TTCommons-Bold";
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    @media (max-width: 575px) {
+        font-family: "TTCommons-DemiBold";
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+}
+
+.firstscreen-link{
+    display: inline-block;
+    padding: 20px 39px 14px 38px;
+    font-size: 12px;
+    @media (max-width: 414px) {
+        display: inline-block;
+    }
+}
+
+.firstscreen-partners {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    & span,img {
+        display: block;
+        height: 100%;
+    }
+    @media (max-width: 575px) {
+        max-width: 100%;
+        justify-content: center;
+    }
+}
+
+.partners-item {
+    font-family: "TTCommons-Regular";
+    font-size: 17px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-right: 22px;
+    @media (max-width: 575px) {
+        // margin-right: 15px;
+    }
+}
+
+.partners-bitrix24 {
+    margin-right: 16px;
+}
+
+.partners-1c-bitrix {}

@@ -1,0 +1,135 @@
+.about {
+    padding: 115px 0;
+    background-color: #F5F5F5;
+
+    @media (max-width: 414px) {
+        padding: 40px 0;
+    }
+}
+
+.container {}
+
+.about-wrapper {
+    margin: 0 -15px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 414px) {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+    width: 50%;
+
+    @media (max-width: 414px) {
+        width: 100%;
+    }
+}
+
+.about-desc {
+    margin-bottom: 37px;
+
+    @media (max-width: 414px) {
+        margin-bottom: 20px;
+    }
+}
+
+.about-title {
+    font-family: "TTCommons-Bold";
+    font-size: 48px;
+    line-height: 40px;
+    color: #333333;
+    margin-bottom: 15px;
+
+    @media (max-width: 414px) {
+        font-size: 38px;
+        text-align: center;
+        line-height: 36px;
+        margin-bottom: 10px;
+    }
+}
+
+.about-subtitle {
+    font-family: "Pragmatica-Medium";
+    font-size: 20px;
+    line-height: 44px;
+    color: #333333;
+
+    @media (max-width: 414px) {
+        text-align: center;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+}
+
+.about-text {
+    font-family: "Pragmatica-Book";
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+
+    @media (max-width: 414px) {
+        text-align: justify;
+    }
+
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
+}
+
+.about-photo-row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 414px) {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+}
+
+.about-photo-wrap {
+    max-width: 270px;
+    max-height: 198px;
+    border-radius: 9px;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 414px) {
+        &:first-child {
+            display: none;
+        }
+    }
+}
+
+.about-photo-col {
+    width: 50%;
+    max-height: 100%;
+    margin: 0 15px;
+    border-radius: 9px;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 414px) {
+        display: none;
+    }
+
+}

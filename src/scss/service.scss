@@ -1,0 +1,107 @@
+.service {
+    padding: 115px 0;
+    background-color: #F6F4F9;
+    @media (max-width: 414px) {
+        background-color: #090B32;
+        padding: 40px 0;
+        
+    }
+}
+
+.service-wrapper {
+    text-align: center;
+    margin: 0 -15px;
+}
+
+.service-text {
+    margin-bottom: 44px;
+    @media (max-width: 414px) {
+        margin-bottom: 0;
+        padding: 0 15px;
+        
+    }
+}
+
+.service-title {
+    font-family: "TTCommons-Bold";
+    font-size: 48px;
+    line-height: 40px;
+    color: #333333;
+    margin-bottom: 14px;
+    @media (max-width: 414px) {
+        font-size: 38px;
+        text-align: center;
+        line-height: 36px;
+        margin-bottom: 10px;
+        color: white;
+    }
+}
+
+.service-subtitle {
+    font-family: "Pragmatica-Book";
+    font-size: 18px;
+    line-height: 24px;
+    color: #777777;
+    @media (max-width: 414px) {
+        text-align: center;
+        line-height: 27px;
+        margin-bottom: 20px;
+        color: white;
+    }
+}
+.service-items{
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 414px) {
+        justify-content: center;
+    }
+}
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 270px;
+    margin: 0 15px;
+    background: #FFFFFF;
+    border-radius: 9px;
+    margin-bottom: 32px; 
+    padding: 27px 0 27px 29px;
+    @media (max-width: 414px) {
+        padding: 10px 0 10px 12px;
+        flex-basis: 80%;
+        margin-bottom:7px; 
+    }
+}
+
+.service-image {
+    width: 66px;
+    height: 66px;
+    background: linear-gradient(105.96deg, #3F0F72 13.07%, #791281 85.2%);
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 17px;
+    & img{
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
+    @media (max-width: 414px) {
+        width: 50px;
+        height: 50px;
+
+    }
+}
+
+.service-desc {
+    font-family: "Pragmatica-Medium";
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 138px;
+    color: #333333;
+    text-align: left;
+    @media (max-width: 414px) {
+        max-width: initial;
+    }
+}
