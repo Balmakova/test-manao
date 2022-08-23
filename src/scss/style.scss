@@ -16,12 +16,6 @@
     overflow: hidden;
 }
 
-    @media (max-width: 414px) {
-        html, body {
-            overflow-x: hidden;
-        }
-    }
-
 .container {
     max-width: 1200px;
     margin: auto;
@@ -32,7 +26,6 @@
         padding: 0 15px;
     }
 }
-
 
 .btn {
     border: none;
@@ -47,6 +40,12 @@
         cursor: pointer;
         background: transparent;
         outline: 2px solid #473E69;
+    }
+    @media (max-width: 414px) {
+        &:focus{
+            background: transparent;
+            outline: 2px solid #473E69;
+        } 
     }
 
 }

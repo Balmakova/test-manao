@@ -18,8 +18,10 @@
                         <img src="./img/header/header-logo.png" alt="header-logo">
                     </a>
                 </div>
-                <div class="header-burger">
+                <div class="header-burger-wrap">
+                    <span class="header-burger">
 
+                    </span>
                 </div>
                 <nav class="header-menu">
                     <ul class="header-menu__list">
@@ -31,6 +33,9 @@
                         </li>
                         <li class="header-menu__link">
                             <a href="#posts">Публикации</a>
+                        </li>
+                        <li class="header-menu__link link-hidden">
+                            <a href="#request">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -388,14 +393,14 @@
                 <div class="request-wrap">
                     <form name="request-form" class="request-form" id='form' action="#" method="post">
                         <div class="request-form-item">
-                            <input type="text" id="request-name" placeholder="Ваше имя" tabindex="1" required>
+                            <input type="text" id="request-name" class='form__input _req' placeholder="Ваше имя" tabindex="1">
                         </div>
                         <div class="request-form-item">
-                            <input type="email" id="request-adress" placeholder="Адрес сайта" tabindex="2" required>
+                            <input type="email" id="request-adress" class='form__input _email _req' placeholder="Адрес сайта" tabindex="2">
                         </div>
 
                         <div class="request-form-item">
-                            <textarea name="textarea" id="request-desc" class="request-textarea"
+                            <textarea name="textarea" id="request-desc" class="form__input request-textarea"
                                 placeholder="Описание задач" tabindex="3"></textarea>
                         </div>
                         <div class="request-checkbox-wrapper">
@@ -415,7 +420,7 @@
                         </div>
                         <div class="request-form-button">
                             <p>Нажимая на кнопку, вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
-                            <button type="submit" class="btn firstscreen-form-button popup-show" tabindex="7">
+                            <button type="submit" class="btn form-button " tabindex="7">
                                 отправить заявку
                             </button>
                         </div>

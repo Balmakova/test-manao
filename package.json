@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "deploy":"rm -rf dist/ && npm run build && gh-pages -d dist"
+   
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Balmakova/test-manao/issues"
   },
-  "homepage": "https://github.com/Balmakova/test-manao#readme",
+  "homepage": "https://balmakova.github.io/test-manao",
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "sass": "^1.49.0"

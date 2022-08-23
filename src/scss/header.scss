@@ -5,21 +5,22 @@
     z-index: 50;
     width: 100%;
     padding: 39px 0;
-    @media (max-width: 575px) {
-        padding: 25px 0;
+
+    @media (max-width: 414px) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 20px 0;
+        background-color: #090B32;
+        z-index: 100;
 
     }
 }
 
 .header-row {
     display: flex;
-    // border: 1px solid white;
     justify-content: space-between;
     align-items: center;
-
-    @media (max-width: 575px) {
-        
-    }
 }
 
 .header-logo-wrap {
@@ -36,56 +37,107 @@
     text-align: center;
 }
 
-.header-burger {
+.header-burger-wrap {
     display: none;
-    @media (max-width: 575px) {
+
+    @media (max-width: 414px) {
         display: block;
-        height: 2px;
         width: 27px;
-        background-color: white;
-        position: relative;
-
-        &:before {
-            content: "";
-            display: block;
-            height: 2px;
-            width: 27px;
-            background: #FFFFFF;
-            position: absolute;
-            bottom: 8px;
-
-            &:hover {
-                left: 5px;
-            }
-        }
-
-        &:after {
-            content: "";
-            display: block;
-            height: 2px;
-            width: 27px;
-            background: #FFFFFF;
-            position: absolute;
-            top: 8px;
-        }
+        padding: 13px 0;
     }
 }
 
-.header-menu {
-    @media (max-width: 575px) {
-        display: none;
+
+.header-burger {
+    transition: 0.2s;
+    @media (max-width: 414px) {
+        display: block;
+        height: 2px;
+        width: 27px;
+        position: relative;
+        background-color: #FFFFFF;
+
     }
 
+    &:before {
+        transition: 0.2s;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 27px;
+        background: #FFFFFF;
+        position: absolute;
+        bottom: 8px;
+    }
+
+    &:after {
+        transition: 0.2s;
+        content: "";
+        display: block;
+        height: 2px;
+        width: 27px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 8px;
+    }
+}
+.header-burger.active{
+    background: transparent;
+}
+
+.active-burger {
+     :before {
+        transform: rotate(45deg);
+        bottom: 0px;
+    }
+    :after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    
+}
+
+
+
+.header-menu {
+    
+    @media (max-width: 414px) {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 0;
+        width: 0;
+        transition: 0.4s;
+
+    }
+}
+
+.burger_fullscreen {
+    opacity: 1;
+    visibility: visible;
+    top: 68px;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(105.96deg, #3b065ee5 23.07%, #23046d 86.93%);
+    overflow: auto;
 }
 
 .header-menu__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: 575px) {
-        display: none;
+    @media (max-width: 414px) {
+        width: 100%;
+        flex-direction: column;
+        padding: 0 15px;
+        justify-content: center;
+        align-items: center;
+
     }
 }
+
 
 .header-menu__link {
     margin-right: 60px;
@@ -101,15 +153,37 @@
         line-height: 16px;
         transition: 0.2s;
         color: #FFFFFF;
+
+        @media (max-width: 414px) {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 22px;
+            padding: 30px 15px;
+        }
     }
 
     &:hover a {
         color: #7E779A;
     }
+
+    @media (max-width: 414px) {
+        width: 100%;
+        border-bottom: 1px solid rgba(193, 173, 240, 0.61);
+        margin-right: 0;
+
+    }
 }
 
+.link-hidden{
+    display: none;
+    @media (max-width: 414px) {
+        display: block;
+    }
+}
+    
 .header-contacts {
-    @media (max-width: 575px) {
+    @media (max-width: 414px) {
         display: none;
     }
 }
@@ -122,7 +196,12 @@
 }
 
 .header-contacts__link {
+
     margin-right: 45px;
+
+    &:hover a {
+        color: #7E779A;
+    }
 
     &:last-child {
         margin-right: 0;
@@ -131,12 +210,15 @@
 
 .header-contacts__link {
     position: relative;
+
     & a {
         font-family: 'TTCommons-Regular';
         font-size: 17px;
         line-height: 14px;
         letter-spacing: 0.1em;
         color: #FFFFFF;
+        transition: 0.2s;
+
     }
 }
 
